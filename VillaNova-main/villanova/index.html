@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VillaNova — Découvrez les événements près de chez vous</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/villanova/css/sass/main.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <nav aria-label="Navigation principale">
+    <a href="index.html" class="logo" aria-label="VillaNova — accueil">VillaNova</a>
+    <a href="#" class="btn">Connexion</a>
+  </nav>
+
+  <main id="main">
+    <div class="hero">
+      <h1>Découvrez votre prochaine <em>expérience</em></h1>
+      <p>Une sélection éditoriale d'événements issus d'OpenAgenda.</p>
+      <div class="btns">
+        <a href="#evenements" class="primary">Explorer</a>
+        <a href="#categories" class="secondary">Par catégorie</a>
+      </div>
+    </div>
+
+    <section id="evenements" aria-labelledby="titre-evenements">
+      <div class="container">
+        <h2 id="titre-evenements">Coups de <em>cœur</em></h2>
+        <div class="cards" id="cards" role="list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="categories" class="bg" aria-labelledby="titre-categories">
+      <div class="container">
+        <h2 id="titre-categories">Explorer par <em>catégorie</em></h2>
+        <div class="cats" id="cats" role="group" aria-label="Filtrer par catégorie"></div>
+      </div>
+    </section>
+
+    <section id="agenda" aria-labelledby="titre-agenda">
+      <div class="container">
+        <h2 id="titre-agenda">Événements à <em>venir</em></h2>
+        <div class="rows" id="rows" role="list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 VillaNova — propulsé par OpenAgenda</p>
+    <div>
+      <a href="#">Confidentialité</a>
+      <a href="https://api.openagenda.com" target="_blank" rel="noopener">API</a>
+    </div>
+  </footer>
+
+  <script src="/villanova/javascript/app.js"></script>
+</body>
+</html>
