@@ -55,8 +55,8 @@ async function renderCards() {
 
   document.getElementById('cards').innerHTML = list.map(e => `
       <article class="card" role="listitem" tabindex="0" aria-label="${e.title}"
-        onclick="location.href='/villanova/html/event.html?uid=${e.uid}'"
-        onkeydown="if(event.key==='Enter')location.href='/villanova/html/event.html?uid=${e.uid}'">
+        onclick="location.href='/html/event.html?uid=${e.uid}'"
+        onkeydown="if(event.key==='Enter')location.href='/html/event.html?uid=${e.uid}'">
         <img src="${e.img}" alt="${e.title}" loading="lazy">
         <div class="body">
           <div class="meta">${e.d} ${e.m} · ${e.cat}</div>
@@ -96,8 +96,8 @@ async function renderRows() {
     const p = e.free ? ['Gratuit', 'free'] : [e.price || '—', 'paid'];
     return `
       <article class="row" role="listitem" tabindex="0" aria-label="${e.title}"
-        onclick="location.href='/villanova/html/event.html?uid=${e.uid}'"
-        onkeydown="if(event.key==='Enter')location.href='/villanova/html/event.html?uid=${e.uid}'">
+        onclick="location.href='/html/event.html?uid=${e.uid}'"
+        onkeydown="if(event.key==='Enter')location.href='/html/event.html?uid=${e.uid}'">
         <div class="date" aria-hidden="true">
           <span class="d">${e.d}</span>
           <span class="m">${e.m}</span>
